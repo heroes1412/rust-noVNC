@@ -28,9 +28,8 @@ const WEB_AUTH_FLAG: &str = "__flag__";
     after_help = "Examples:\n  \
         novnc --vnc localhost:5900\n  \
         novnc --listen 127.0.0.1:6080 --vnc 192.168.1.10:5900\n  \
-        novnc --auth admin:secret --vnc localhost:5900\n  \
-        novnc --cert self.pem --ssl-only --vnc localhost:5900\n  \
-        novnc --web ./original-novnc --vnc localhost:5900\n"
+        novnc --auth admin:secret --cert self.pem --ssl-only --vnc localhost:5900\n  \
+        novnc --auth admin:secret --web ./original-novnc --vnc localhost:5900\n"
 )]
 pub struct Args {
     /// Address to listen on, as [HOST:]PORT (default: all interfaces, 6080)
